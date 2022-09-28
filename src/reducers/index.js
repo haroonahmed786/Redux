@@ -1,10 +1,12 @@
-import initialState from './upDown'
+import changeTheNumber from './upDown'
+import mulTheNumber from './mulDiv';
 
 import { combineReducers } from "redux";
 
 const rootReducer = combineReducers({
  
-     initialState
+     changeTheNumber,
+     mulTheNumber
    
 });
 export default rootReducer;

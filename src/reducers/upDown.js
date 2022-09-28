@@ -1,10 +1,11 @@
 import { INCREMENT,DECREMENT } from "../actions/types";
 const initialState = 0;
 const changeTheNumber = ( state = initialState,actions) => {
+    console.log(actions.payload)
     switch(actions.type){
-        case INCREMENT : return state + 1;
+        case INCREMENT : return state + actions.payload;
 
-        case DECREMENT : return state - 1;
+        case DECREMENT : return state - actions.payload;
         default: return state;
     }
 }
